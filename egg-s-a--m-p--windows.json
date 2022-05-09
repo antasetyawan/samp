@@ -17,7 +17,7 @@
     },
     "scripts": {
         "installation": {
-            "script": "#!\/bin\/bash\r\napt -y update\r\napt -y --no-install-recommends install curl unzip lib32gcc1 ca-certificates\r\ncd \/tmp\r\ncurl -SL -o samp.zip http:\/\/files.sa-mp.com\/samp037_svr_R2-1-1_win32.zip\r\nmkdir -p \/mnt\/server\r\nunzip -o -d \/mnt\/server\/ samp.zip\r\ncd \/mnt\/server\r\nchown -R root:root \/mnt\r\nexport HOME=\/mnt\/server",
+            "script": "#!\/bin\/bash\r\napt -y update\r\napt -y --no-install-recommends install curl winbind unzip lib32gcc1 ca-certificates\r\ncd \/tmp\r\ncurl -SL -o samp.zip http:\/\/files.sa-mp.com\/samp037_svr_R2-1-1_win32.zip\r\nmkdir -p \/mnt\/server\r\nunzip -o -d \/mnt\/server\/ samp.zip\r\ncd \/mnt\/server\r\nchown -R root:root \/mnt\r\nexport HOME=\/mnt\/server",
             "container": "ubuntu:16.04",
             "entrypoint": "bash"
         }
